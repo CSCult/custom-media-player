@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen Up - Artists</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(222, 185, 252);
+        
+    }
+
+    nav {
+        color: rgb(0, 0, 0);
+        background-color: rgb(207, 144, 244);
+        box-sizing: border-box;
+        box-shadow: 0px 3px 14px rgb(160, 94, 176);
+        width: 100vw;
+    }
+
+    .nav-bar {
+        display: flex;
+        margin: 0px 148px;
+        justify-content: center;
+        align-items: center;
+        /* width: 100vw; */
+    }
+
+    .logo {
+        display: inline;
+        height: 69px;
+        width: 69px;
+    }
+
+    .name {
+        display: inline;
+        margin: 30px 10px;
+        font-size: 28px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: 40px;
+    }
+
+    form {
+        display: flex;
+    }
+
+    #search-bar {
+        width: 389px;
+        height: 40px;
+        font-size: 17px;
+        font-family: sans-serif;
+        padding: 0px 3px;
+        margin: 2px 1px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .btn {
+        display: flex;
+        width: 98px;
+        height: 41px;
+        align-items: center;
+        justify-content: center;
+        margin: 3px 14px;
+        font-size: 20px;
+        color: #dec0fc;
+        background-color: #131314;
+        font-family: monospace;
+    }
+
+    table {
+        margin: 60px 45px;
+    }
+
+    table,
+    th,
+    td {
+        border: 2px solid rgb(52, 0, 68);
+        border-collapse: collapse;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #af027a;
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        position: relative;
+        top: 14px;
+    }
+    img {
+        width: 162px;
+        height: 209px;
+        padding: 16px;
+    }
+
+    .imgs:hover{
+        width: 175px;
+        height: 222px;
+        box-shadow: 2px 2px 20px purple;
+    }
+    hr{
+        border: 1px dashed black;
+        background-color: black;
+        width: 200px;
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <img src="logo4.png" alt="logo" class="logo">
+                <div class="name">Listen Up</div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <form action="#">
+                <input type="text" name="search-bar" id="search-bar" placeholder="Search your favorite artist here">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+
+        <div class="artists">
+            <table>
+
+                <tr>
+                    <td>
+                        <a href="#"><img src="art1.jfif" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Arijit Singh</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art2.cms" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Sherya Ghoshal</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art3.jpg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Lata Mangeshkar</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art4.jfif" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Justin Bieber</p>
+                    </td>
+        
+                    <td>
+                        <a href="#"><img src="art5.jfif" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Ed Sheeran</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art6.jpeg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Jubin Nautiyal</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art7.jpg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Selena Gomez</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art8.jpg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>A P Dhillon</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="#"><img src="art1.jfif" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Arijit Singh</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art2.cms" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Sherya Ghoshal</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art3.jpg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Lata Mangeshkar</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art4.jfif" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Justin Bieber</p>
+                    </td>
+        
+                    <td>
+                        <a href="#"><img src="art5.jfif" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Ed Sheeran</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art6.jpeg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Jubin Nautiyal</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art7.jpg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>Selena Gomez</p>
+                    </td>
+                    <td>
+                        <a href="#"><img src="art8.jpg" alt="img" class="imgs"></a>
+                        <hr>
+                        <p>A P Dhillon</p>
+                    </td>
+                </tr>
+
+        </div>
+    </main>
+</body>
+
+</html>

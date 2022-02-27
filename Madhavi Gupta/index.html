@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen Up</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222, 185, 252);
+    background-image: url("bg.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+
+}
+
+nav {
+    color: rgb(0, 0, 0);
+    background-color: rgb(207, 144, 244);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 14px rgb(160, 94, 176);
+    width: 100vw;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 0px 148px;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo {
+    display: inline;
+    height: 69px;
+    width: 69px;
+}
+
+.name {
+    display: inline;
+    margin: 30px 10px;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    margin: 14px 0;
+    width: 50vh;
+}
+
+.content {
+    min-height: calc(100vh - 50px - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4rem;
+    width: 100vw;
+}
+
+.uls {
+    display: flex;
+    position: relative;
+    left: 380px;
+}
+
+.list-items {
+    margin: 3px 44px;
+    padding: 3px;
+    list-style: none;
+    font-size: 25px;
+}
+
+a {
+    color: #370b44;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(104, 22, 129);
+}
+
+form {
+
+    display: flex;
+    position: relative;
+    left: -20vw;
+    top: 50px;
+}
+
+#search-bar {
+    width: 389px;
+    height: 40px;
+    font-size: 17px;
+    font-family: sans-serif;
+    padding: 0px 3px;
+    margin: 2px 1px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btn {
+    display: flex;
+    width: 98px;
+    height: 41px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 14px;
+    font-size: 20px;
+    color: #dec0fc;
+    background-color: #131314;
+    font-family: monospace;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <img src="logo4.png" alt="logo" class="logo">
+                <div class="name">Listen Up</div>
+                <ul class="uls">
+                    <li class="list-items"><a href="index.html">Home</a></li>
+                    <li class="list-items"><a href="trending.html">Trending</a></li>
+                    <li class="list-items"><a href="artists.html">Artists</a></li>
+                    <li class="list-items"><a href="myalbum.html">MyAlbum</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <form action="#">
+                <input type="text" name="search-bar" id="search-bar" placeholder="Search your favorite song here">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="end">
+            Listen Up &copy; Copyrights
+        </div>
+    </footer>
+</body>
+
+</html>
