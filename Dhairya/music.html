@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix - Your final destination</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- <li class = "brand"><img src = "logo.jpg" alt = "music">Sur </li> -->
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist">
+            <h1>Best Songs Of All Times</h1>
+            <div class="songitemcontainer">
+            <div>
+                <div class="songItem" class = "songitemplay">
+                    <img src = "5468.jpg" alt="1">
+                    <span class = "songname"><b>Raataan Lambiyan</b></span>
+                    <span class="songlistplay"><span class = "timestamp">03:50 <!--<i class="far fa-3x duotone fa-circle-play"></i>-</span></span>  -->
+                </div>
+            <div class="songItem" class = "songitemplay">
+                <img src = "5337.jpg" alt="1">
+                <span class = "songname"><b>Sakhiyan 2.0</b></span>
+                <span class="songlistplay" id = "1"><span class = "timestamp">02:57<!--<i class="far fa-3x duotone fa-circle-play"></i>---></span></span> 
+            </div>
+            <div class="songItem" class = "songitemplay">
+                <img src = "5271.jpg" alt="1">
+                <span class = "songname"><b>Chunar</b></span>
+                <span class="songlistplay" id = "2"><span class = "timestamp">04:29<!--<i class="far fa-3x duotone fa-circle-play"></i>---></span></span> 
+            </div>
+            <div class="songItem" class = "songitemplay">
+                <img src = "5341.jpg" alt="1">
+                <span class = "songname"><b>Dil Diyan Gallan</b></span>
+                <span class="songlistplay" id = "3"><span class = "timestamp">04:20<!--<i class="far fa-3x duotone fa-circle-play"></i>---></span></span> 
+            </div>
+            <div class="songItem" class = "songitemplay">
+                <img src = "5223.jpg" alt="1">
+                <span class = "songname"><b>Besabriyaan</b></span>
+                <span class="songlistplay" id = "4"><span class = "timestamp">04:15<!--<i class="far fa-3x duotone fa-circle-play"></i>---></span></span> 
+            </div>
+            <div class="songItem" class = "songitemplay">
+                <img src = "5267.jpg" alt="1">
+                <span class = "songname"><b>Chashni</b></span>
+                <span class="songlistplay" id = "5"><span class = "timestamp">04:26<!--<i class="far fa-3x duotone fa-circle-play"></i>---></span></span> 
+            </div>
+            <div class="songItem" class = "songitemplay">
+                <img src = "5213.jpg" alt="1">
+                <span class = "songname"><b>Hangover</b></span>
+                 <span class="songlistplay" id = "6"><span class = "timestamp">06:15<!--<i class="far fa-3x duotone fa-circle-play"></i>-</span></span>--->
+            </div>
+            </div>
+        </div> 
+        <div class="songlists"></div>
+        <div class="songbanner"></div>
+    </div>
+    </div>
+    <div class="Bottom">
+        <input type="range"name="range" id="myprogressbar" value = "0" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-3x duotone fa-backward-step" id = "previous"></i>
+            <i class="far fa-3x duotone fa-circle-play" id ="masterplay"></i>
+            <i class="fa-solid fa-3x duotone fa-forward-step" id = "next"></i>
+        </div>
+        <div class="songinfo">
+            <img src = "playing.gif" width = "200px"alt="1" id = "gif"> <!---Radha - Dhvani Bhanushali-->
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d708c464d4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
