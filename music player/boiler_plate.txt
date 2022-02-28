@@ -1,0 +1,877 @@
+"""
+@Author: ADD YOUR NAME HERE
+@Date Created: ADD DATE CREATED
+@Title: CUSTOMIZED MEDIA PLAYER
+"""
+
+#Boilerplate for HTML FILE 
+# name a file named as ->  index.html
+
+
+#below is the demo code to begin with
+'''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+'''
+
+#add below module just above </body>  
+  #  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+#in title write your unique media player name
+
+#give unique id and class name to body ( helpful for css later)
+#demo syntax-> <body id="bg" class="bg">
+
+
+#making button for easy scrolling
+#use inbuilt tag button
+# download an arrow img from google
+#insert img in button using anchor tag in html
+#give button a unique id ( helpful for css later)
+
+
+#making navigation bar
+#make tag nav and add ul tag in it with 5 li (syntax -> <nav> <ul> <li> (5) </li> </ul> </nav>)
+#in 5 li's write //your media player name// home //trending //my album //artists respectively inside an anchor tag
+'''
+
+
+		  <li class="brand"><img src="finallogo.png ( name of image of our downloaded logo) " id="Sangam"><span>Sangam( Your media player name) </span></li>
+			//to set img of logo apply css to it //check out css brand section or do it when you arrive there 
+
+//give class nav-text like 1st to all 4 
+                <li class="nav-text" ><a href="#Home">Home</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#myAlbum">MyAlbum</a></li>
+       
+                <li ><a href="#artists">Artists</a></li>
+'''
+
+#note what's written inside href; will be used for accessing sections  
+
+#make a button in ul tag after li
+# use button tag and write contact in it inside a(anchor) >href (syntax below)
+'''
+    <button >
+                <a href=" ">Contact</a>
+            </button>
+'''
+#note (adding logo in our navbar)(download logo of your choice from google)
+#in 1st li in ul add your img as #        <li><img src="finallogo.png" ><span>media player name</span></li>
+
+
+#making HOME
+#add a backgroung img of your choice( a quote or an image or music artist etc) using div and give id "Home" to it
+'''
+  <div id="Home">
+      
+        <img src="home_demo.jpg" ">
+      </div>
+
+'''
+#close all tags
+
+
+#making trending
+#make a div with id trending
+#make another div  and inside it in h1 write 'Top Trendings'
+#make another div inside  with class 'card_wrapper1'
+#we will be making 6 cards to display top 6 trending songs
+#in this div make another div named 'card' 
+#inside this follow following syntax
+
+'''    
+            <div class="card ">
+                <div class="overlay">
+                    <span>song name </span>
+                    <a href="download link">TOP 1</a>
+                </div>
+                <img class="double" src="// poster of song" alt="">
+            </div>
+'''
+
+#copy this card 5 more times
+#add song name //download link( drive link) //poster img of your own choice
+#close all tags
+
+#making MyAlbum
+#make a div with id myAlbum and class "container"
+#make another div inside with class 'songlist'
+#inside it in h1 write 'Myalbum'
+##make another div inside  with class 'songlist_Container'
+#we will be adding our favvv 10 songs in our album
+#make a div with class "songItem" as follows then copy it 10 times ( changing name of song )
+//leave all else unchanged
+'''
+ <div class="songItem">
+                        <img alt="1">
+                        <span class="songName">//write song name here</span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i 
+                                 id="0"   class="far songItemPlay fa-2x fa-play-circle"></i></span> </span>
+                    </div>
+'''
+#close all tags
+
+#making section Artists
+#make a div with id Artists and class "artists"
+#make another div inside with class 'container'
+#inside it in h1 write 'top Artists'
+#we will be adding our favvv 6 artists in our album
+#make a div as follows and copy it next 5 time
+#change the name and image each time
+#change class name = "artist1" each time as artist2,3......so on till 6
+
+'''
+ <div class="artist1">
+                <div class="card-wrapper">
+                   <img src="img of the artist" alt="">
+                   <h3>name of the artist</h3>
+                </div>
+            </div>'''
+#close all tags
+
+#making footer 
+#make a section with footer tag and give it id contact
+#in span tag insert image of your logo
+#in h3 write contact info like email etc
+#close all tags
+
+#making BOTTOM
+#just write the following code including changesa as mentioned init
+#we are using fontawesome icons 
+
+'''
+
+
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <!-- Definition and Usage
+The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the attributes below. -->
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i id="previous" class="fas fa-3x fa-step-backward"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i id="next" class="fas fa-3x fa-step-forward"></i>
+
+        </div>
+        <div class="songInfo">
+            <img src="//add a gif image of music here" width="42px" alt="" id="gif"> <span id="masterSongName"> first song name of your playlist</span>
+        </div>
+    </div>
+
+'''
+#close all tags
+
+=============================================================================================================================================================================================
+#try css on your own now by giving classes to divs 
+//make a new file named style.css add it in out html doc
+// syntax: <link rel="stylesheet" href="style.css">
+
+//now in browser search google fonts and import by coping url any two your fav css style sheets in your css file
+//example i copied
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Poppins:wght@300&family=Ubuntu&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Poppins:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+//write this at the top of your css sheet 
+
+//in html give a class = "bg" and id = "bg" to body tag
+//give it a light background color and and height 100 
+//if img doesn't sets use backgroung image attributes like:
+/*
+/* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+//to set all margin and padding initially 0 we use following special syntax:
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+
+//designing navbar
+//add font style to nav
+//then in nav ul make display flex list-font-style none and add following attributes
+// note :- set ayyributes or change them as per your project requirement
+
+/*
+nav{
+    font-family: 'Ubuntu',sans-serif;
+    
+}
+
+nav ul{
+    display: flex;
+    // sare items horizontal aa jyge  iske liye we use this
+    list-style-type: none;
+    // bindu bindu design ht jate
+ 
+    background-color: black;
+    // set color and height or change it as per your convience 
+    height: 105px;
+    color: white;
+
+    align-items: center;
+    
+}
+
+*/
+//CSS BRAND SECTION START
+.brand img{
+  
+    width: 65px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+   
+// ab gapping inc krni so li ko padding dedege left right se 10-12 px 
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+//CSS BRAND SECTION ENDS 
+
+//CSS CLASS BOTTOM SECTION START AND CONTAINER EDITING OF MY ALBUM SECTION
+//give class .container to myalbum and apply follwing css oto firest bottom then comtainer and edit as per your project and understanding
+/*
+// adding design to bottom bar 
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+   
+    color: white;
+   // tki bki font sb dikhe 
+    bottom: 0;
+    // isse kam hojye uske lIye container ki min height set krni hogi 
+}
+
+.container{
+    min-height: 70vh;
+    // vh means 75 pecent of height 
+    background-color: black;
+   
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    margin: 23px auto;
+    // auto krne se center pr aa jata 
+    width: 52%;
+    border-radius: 12px;
+    padding: 34px;
+    
+    background-image: url('bg4.jpg');
+//bg4 me apni choice ki koi backgroung img lga skte of dark color 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+//follow following syntax to set  progress bar
+
+/*
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    /* text-align center will not work pr agr container bnayege then eo eork krjyga so apn ab bottom me 3 property lgayge */
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom{
+    flex-direction: column;
+    // tki icons neeche aajye 
+ 
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+*/
+
+#CSS BOTTOM CLASS ENDS 
+
+#CSS SONGITEM CLASS SECTION BEGINS 
+//apply following syntax and chnage as per your accord
+//read comments in syntax to understand
+
+/*
+
+
+.songItem{
+    height: 50px;
+    
+    display: flex;
+    background-color:#e0f2f1;
+    // border-color: black; 
+    width: 113%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    // align items centre krne se image firse bdi jygi for that we do the following then..........songitem img me width alag se 
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+    
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 60px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round',sans-serif;
+}
+
+// hum chahte that ki wo kr wkt dikhti rhe 
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+
+// isse kya hua ki jb bhi hu, js se iski opacity ko 1 ktrege then wh play hojuga 
+// now ab hum likhege js 
+
+.songList{
+    background-image: url('bg4.jpg');
+    background-repeat: no-repeat;
+}
+
+*/
+
+
+#CSS SONGITEM CLASS SECTION ENDS
+
+#CONTACT SECTION WITH BTN CLASS STARTS
+//in html below home trending artist write below code 
+/* 
+<div class="right"></div>
+<button class="btn  ">
+                <a href="#contact">Contact</a>
+            </button>
+*/
+
+//we are making contact section 
+//come back in css and use syntax in class btn 
+/*
+
+
+.btn{
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: 3px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    background-color: brown;
+
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn a:hover{
+ 
+    color: brown;
+    
+   
+    
+}
+.btn:hover{
+    background-color: black;
+    border-color: brown;
+    color: brown;
+}
+
+.nav-text a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Varela Round',sans-serif;
+
+    color: white;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+}
+
+.right {
+    margin-left: 25rem;
+ 
+}
+
+
+.nav-text a:hover{
+    color: brown;
+}
+
+
+.brand{
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+
+*/
+
+#CLASS BTN CONTACT SECTION ENDS
+
+#Home{
+    opacity: 1;
+    clip-path: polygon(0 0,100% 0,100% 100%,75% 87%,0 100%);
+}
+//add above syntax to your css to apply clip effect
+
+//CSS OF TRENDING SECTION 
+//apply following effects to class of section trending
+/*
+.classname{
+      min-height: 78vh;
+    // vh means 75 pecent of height 
+ 
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    margin: 23px auto;
+    //auto krne se center pr aa jata  
+    width: 97%;
+    border-radius: 50%;
+    padding: 34px;
+  
+    background-size: cover;
+    background-repeat: no-repeat;}
+*/
+/*
+
+.card-wrapper1{
+ 
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem;
+
+}
+
+.card-wrapper1 .card1{
+  
+    position: relative;
+    height: 350px;
+}
+
+.card-wrapper1 .card1 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background:rgba(61, 207, 211, 0.9);
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+   
+    color: #F2F2F2;
+ opacity: 0;
+ transition: all 0.3s ease;
+
+}
+.card-wrapper1 .card1:hover .overlay{
+    opacity: 1;
+
+}
+.card-wrapper1 .card1:hover .overlay span{
+    margin-bottom: 15px;
+}
+
+.card-wrapper1 .card1 .overlay a{
+    color:#070606;
+    text-decoration:underline;
+    
+}
+
+.card-wrapper1 .card1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.container3{
+    /* margin-top: 5rem; */
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Varela Round',sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+*/
+
+//in id of section trending apply following
+#idname{
+    background-color: #F2F2F2;
+   
+    padding: 2.5rem;
+}
+//small effects chnage as per your convenience by your css skills
+/*
+.container3 h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container3 p{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.container3 h1>span{
+    color: #3DCFD3;
+    font-size: 2rem;
+}
+*/
+
+#TRENDING SECTION OVER
+
+#ARTISTS SECTION STARTS
+//syntax example
+/*
+#artists > .container{
+    width: 100%;
+    background-image: url('artistbg.jpg');
+    display: grid;
+    grid-template-columns: repeat(3,0.2fr);
+    grid-row-gap:2rem;
+
+  
+}
+
+.card-wrapper{
+    background-color: black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+
+.card-wrapper img{
+    border-radius: 50%;
+}
+
+.card-wrapper h3:hover{
+    color: black;
+    transform: scale(1.3);
+    cursor: pointer;
+    background-image: url('artist1.jpg');
+}
+.card-wrapper h3{
+    text-align: center;
+    font-weight: bolder;
+    
+    padding: auto;
+}
+*/
+
+#TRENDING CSSS ENDS
+
+#FOOTER CSS BEGINS
+//apply following syntax
+/*
+footer{
+    text-align: center;
+    font-family: 'Varela Round',sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 5rem;
+    background-color: black;
+    color: white;
+    padding: 2.5rem;
+}
+
+footer span> img{
+    height: 90px;
+ 
+    border-radius: 50%;
+}
+footer h3{
+    margin-top: 2rem;
+}
+footer h2>span:hover{
+    color: brown;
+    cursor: pointer;
+}*/
+
+#FOOTER CSS ENDS 
+
+#ARROW
+//add following syntax to below class bg of body in html
+//this will help to reach on top faster
+/*
+    <button id="arrow">
+        <a href="#bg"><img src="up-arrow f.png" alt=""></a>
+    </button>
+*/
+//in id arrow apply following and change as per your knowledge 
+/*
+#arrow{
+    position: fixed;
+    z-index: 11111111111;
+    margin-left: 97%;
+    margin-top: 40%;
+    height: 4.4rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+#arrow:hover{
+    background: #3DCFD3;
+}
+*/
+
+//css OVER 
+=============================================================================================================================================================================================
+#js boilerplate
+
+//we will be adding event listeners 
+
+//so now initialize the variables as follows:
+/*
+let songIndex=0;
+let audioElement = new Audio('songs/1.mp3');
+let masterPlay = document.getElementById('masterPlay');
+let myProgressBar = document.getElementById('myProgressBar');
+let gif = document.getElementById('gif');
+let masterSongName = document.getElementById('masterSongName');
+let songItems = Array.from(document.getElementsByClassName('songItem'));*/
+
+//here on left side are the names of the variable and on right are written the class names or id names at which we have to apply that event listener
+//song1 wh name hai jis name se apnne apna song save kra hoga in file while downloading
+
+//now we will be adding our fav 10 songs in our album
+//the syntax is as follows:
+//where replace 
+/*
+let songs = [
+    //array of objects
+    {songName: "write here the name of the song ", filePath: "write here yiur file path example-> songs/1.mp3  means songs folder me 1.mp3 name ki file ka hona", coverPath: "here should be cover photo ka path write same as song ka path examke-> covers/1.jpg"},
+
+//do this for all the other 9 songs also 
+//example for 2nd  and 3rd
+    {songName: "song name ", filePath: "what is your file path  ", coverPath: "what is your cover path"},
+    {songName: "DEAF KEV - Invincible [NCS Release]-320k", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+
+//and so on till 10
+   
+]*/
+
+//now to make call back function use the following syntax but note that use proper/same class/id names as used in html 
+/*
+
+songItems.forEach((element, i)=>{ 
+    // for each leta hai ek call back function
+    // console.log(element,i);
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
+    // image ka src apnne cover path krke diya
+
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
+})
+ */
+
+/*
+
+
+//function to handle play/pause/click
+//use the syntax: 
+
+masterPlay.addEventListener('click', ()=>{
+    if(audioElement.paused || audioElement.currentTime<=0){
+        audioElement.play();
+        //itna krne ke bad bja kr dekho then.....icon pause me convert hojye
+        masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
+        
+        gif.style.opacity=1;
+    }
+    else{
+        audioElement.pause();
+        //itna krne ke bad bja kr dekho then.....icon pause me convert hojye
+        masterPlay.classList.remove('fa-pause-circle');
+        masterPlay.classList.add('fa-play-circle');
+        gif.style.opacity=0;
+    }
+})
+
+
+// time changed event of audio // time update event
+//listen to events*/
+
+//we need to update seekbar as well as time 
+//we will be using time update in event listener
+/*
+
+audioElement.addEventListener('timeupdate',()=>{
+    console.log('timeupdate');
+    //update seekbar
+    // kitna percent me chahiye means ki percent apni chal chuki h audio
+    progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
+    console.log(progress);
+    myProgressBar.value= progress;
+})
+
+myProgressBar.addEventListener('change',()=>{
+    audioElement.currentTime = myProgressBar.value*audioElement.duration/100;
+})
+*/
+
+//see the syntax and read the comments and then use ij your js 
+/*
+
+
+const makeAllPlays = ()=>{
+    // function pause ko play bnane ke liye]
+    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+        element.classList.remove('fa-pause-circle');
+        element.classList.add('fa-play-circle');
+    })
+}
+
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+    element.addEventListener('click',(e)=>{
+
+        if(e.target.classList.contains('fa-play-circle'))
+        {
+            songIndex=parseInt(e.target.id);
+        console.log(e.target);
+        // e kya hai jispr click hua
+        // target se wo element mil jyga jispr click hua 
+        makeAllPlays();
+
+        e.target.classList.remove('fa-play-circle');
+        e.target.classList.add('fa-pause-circle');
+
+        // ek bar kisi ne click kiya then yha hojye
+        audioElement.src = `songs/${songIndex+1}.mp3`;
+        masterSongName.innerText = songs[songIndex].songName;
+        audioElement.play();
+        gif.style.opacity=1;
+        // and then since song change hua hai so current time ko 0 krdege
+         audioElement.currentTime =0;
+         masterPlay.classList.remove('fa-play-circle');
+         masterPlay.classList.add('fa-pause-circle');
+
+        }
+        else if(e.target.classList.contains('fa-pause-circle'))
+        {
+            songIndex=parseInt(e.target.id);
+            console.log(e.target);
+            // e kya hai jispr click hua
+            // target se wo element mil jyga jispr click hua 
+            makeAllPlays();
+    
+            e.target.classList.remove('fa-pause-circle');
+            e.target.classList.add('fa-play-circle');
+
+    
+            // ek bar kisi ne click kiya then yha hojye
+            audioElement.src = `songs/${songIndex+1}.mp3`;
+            masterSongName.innerText = songs[songIndex].songName;
+            audioElement.pause();
+            gif.style.opacity=0;
+      
+            audioElement.currentTime = progress;
+             masterPlay.classList.remove('fa-pause-circle');
+             masterPlay.classList.add('fa-play-circle');
+   
+    
+        }
+        
+        
+    })
+})
+
+
+// yh kaise pta chalega ki jis pr click kra hai wo apna 1st ya 5th ya konsa song hai
+// so we have given indexing and id dedi sbko
+
+// now...next and previous pr click wla
+
+document.getElementById('next').addEventListener('click', ()=>{
+    if(songIndex>=9){
+        songIndex = 0
+    }
+    else{
+        songIndex += 1;
+    }
+    audioElement.src = `songs/${songIndex+1}.mp3`;
+    masterSongName.innerText = songs[songIndex].songName;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+
+})
+
+document.getElementById('previous').addEventListener('click', ()=>{
+    if(songIndex<=0){
+        songIndex = 0
+    }
+    else{
+        songIndex -= 1;
+    }
+    audioElement.src = `songs/${songIndex+1}.mp3`;
+    masterSongName.innerText = songs[songIndex].songName;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+})
+
+// name bhi bdle as song chages
+// bydefault 1st wla rkhrge
+*/
+
+//your assignment would be ki ap jb pkay pause kroge usme ek kmi lgegi with above syntax
+//find that and resolve it with your skills
+
